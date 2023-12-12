@@ -1,0 +1,256 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  bottom: 360px;
+  right: 50px;
+}
+
+.logo-image {
+  max-width: 50%;
+  height: auto;
+}
+
+.home-link {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  color: #333;
+  margin-right: 20px;
+}
+
+.home-link:hover {
+  color: grey;
+}
+
+.first-section,
+.second-section {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  bottom: 700px; /* Prilagođena vrednost za podizanje sekcija */
+  transition: background-image 0.5s ease-in-out;
+}
+
+.first-section {
+  background-image: url('./ObsessedSlike/OverSize3.jpeg');
+}
+
+.first-section:hover {
+  background-image: url('./ObsessedSlike/OverSize4.jpeg');
+}
+
+
+.second-section {
+  background-image: url('./ObsessedSlike/Carape1.jpeg');
+  margin-top: 30px;
+}
+
+.second-section:hover {
+  background-image: url('./ObsessedSlike/Carape2.jpeg');
+}
+.third-section{
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 800px;
+overflow: hidden;
+position: relative;
+bottom: 700px; /* Prilagođena vrednost za podizanje sekcija */
+transition: background-image 0.5s ease-in-out;
+margin-top: 20px;
+}
+
+.third-section {
+background-image: url('./ObsessedSlike/Stinger1.jpeg');
+}
+
+.third-section:hover {
+background-image: url('./ObsessedSlike/Stinger2.jpeg');
+}
+
+.overlay {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.overlay:hover {
+  opacity: 0.5;
+}
+ 
+.shop-now-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.shop-now-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+body {
+  overflow-x: hidden;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  bottom: 360px;
+  right: 50px;
+}
+
+/* Ostatak koda... */
+.nav-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Prilagođena vrednost za razmak između "Početna" i "Shop" */
+  top: 20px; /* Prilagođena vrednost za vertikalni razmak od vrha stranice */
+  right: 20px; /* Prilagođena vrednost za horizontalni razmak od desnog ruba */
+}
+.shop-button {
+  background-color: white;
+  color: black;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 23px;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  right: 150px;
+  top: 100px;
+  box-shadow: none; /* Uklonite senku */
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+  top: 250%; /* Postavite meni ispod dugmeta */
+  right: 35px;
+}
+
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.nav-container:hover .dropdown {
+  display: block;
+}
+
+
+.kaizen-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -600px; /* Podignuto prema gore */
+}
+
+.kaizen-image {
+  width: 30%; /* Smanjena veličina slike */
+  height: auto;
+}
+
+.kaizen-description {
+  font-size: 20px; /* Povećan font teksta */
+  font-family: 'Arial', sans-serif; /* Promenjen font */
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  font-style: italic; /* Dodata italic dekoracija */
+}
+.bottom-menu {
+  background-color: black;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  bottom: 0;
+}
+
+.beli-logo {
+  width: 30%; /* Podešeno na fiksnu širinu */
+  height: auto;
+  position: relative;
+  right: 40%;
+}
+
+.bottom-links {
+  display: flex;
+  position: relative;
+  left: 60%;
+}
+
+.bottom-link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.bottom-link:hover {
+  color: grey;
+}
+
+.instagram-link {
+  display: flex;
+  align-items: center;
+}
+
+.instagram-icon {
+  width: 60px; /* Podešavanje veličine Instagram ikone */
+  height: 60px;
+  background-size: cover;
+  margin-right: 5px; /* Dodatni razmak između ikone i teksta */
+  position: relative;
+  top: 20px;
+  margin-left: 15px;
+}
+.gmail{
+  position: relative;
+  color: white;
+  right: 155px;
+  top: 50px;
+  font-size: 17px;
+}
+
+
+
